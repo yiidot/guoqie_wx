@@ -20,12 +20,6 @@ Page({
       duration: 1000
     },
     productinfo: [],
-    // cartInfo: {
-    //   products: {},
-    //   // {productid,num,price}
-    //   totalPrice: 0
-    // },
-    // cartEmpty: false,
     totalPrice: 0,
     cartinfo: {
       products: {},
@@ -202,9 +196,6 @@ Page({
     }
   },
   onLoad: function () {
-    // wx.navigateTo({
-    //   url: '../checkout/checkout',
-    // })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
